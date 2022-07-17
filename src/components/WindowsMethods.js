@@ -2,12 +2,12 @@ import useWindowsMethods from "./useWindowsMethods";
 
 const WindowsMethods = () => {
 
-    const {openNewTab, loadNewPage, goBack, goForward, showConfirmBox} = useWindowsMethods();
+    const {getCookieByName} = useWindowsMethods();
 
 
     return (
         <>
-            <button onClick={showConfirmBox}>abrir </button>
+            <button onClick={() => getCookieByName("test")}>open </button>
         </>
     );
 };
