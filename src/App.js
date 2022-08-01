@@ -2,7 +2,9 @@
 
 // import ReactUseEffect from "./components/react-hooks-learning/ReactUseEffect";
 
-import ReactHookUseRef from "./components/react-hooks-learning/ReactHookUseRef";
+// import ReactHookUseRef from "./components/react-hooks-learning/ReactHookUseRef";
+// import ReactHookUseState from "./components/react-hooks-learning/ReactHookUseState";
+import ReactHookUseStateV2 from "./components/react-hooks-learning/ReactHookUseStateV2";
 
 function App() {
 
@@ -10,7 +12,9 @@ function App() {
     <>
       {/*<WindowsMethods/>*/}
       {/*<ReactUseEffect/>*/}
-        <ReactHookUseRef/>
+      {/*  <ReactHookUseRef/>*/}
+      {/*  <ReactHookUseState/>*/}
+        <ReactHookUseStateV2/>
     </>
   );
 }
