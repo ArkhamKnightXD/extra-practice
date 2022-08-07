@@ -103,8 +103,6 @@ const useWindowsMethods = () => {
 
 
    // JavaScript can be executed in time-intervals. This is called timing events.
-
-
     const showAlertBoxAfter5Seconds = () => {
 
         // Executes a function, after waiting a specified number of milliseconds.

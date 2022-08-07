@@ -4,7 +4,9 @@
 
 // import ReactHookUseRef from "./components/react-hooks-learning/ReactHookUseRef";
 // import ReactHookUseState from "./components/react-hooks-learning/ReactHookUseState";
-import ReactHookUseStateV2 from "./components/react-hooks-learning/ReactHookUseStateV2";
+// import ReactHookUseStateV2 from "./components/react-hooks-learning/ReactHookUseStateV2";
+
+import ArrayMethods from "./components/array-methods/ArrayMethods";
 
 function App() {
 
@@ -14,7 +16,8 @@ function App() {
       {/*<ReactUseEffect/>*/}
       {/*  <ReactHookUseRef/>*/}
       {/*  <ReactHookUseState/>*/}
-        <ReactHookUseStateV2/>
+      {/*  <ReactHookUseStateV2/>*/}
+      <ArrayMethods/>
     </>
   );
 }
