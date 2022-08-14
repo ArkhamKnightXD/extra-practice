@@ -19,6 +19,8 @@ const ReactUseEffect = () => {
     //    Por lo tanto lo correcto es siempre poner un array de deps, ya sea vacio o con alguna variable
     }, [age]);
 
+    //Nota importante si, ponemos
+
 
     //Uno de los problemas principales que crea el useEffect son los memory leaks, esto sucede cuando realizamos una
     //peticion a un Api y el componente se desmonta antes de que esta peticion termine, entonces cuando la peticion
@@ -40,10 +42,13 @@ const ReactUseEffect = () => {
 
         //Cuando cambiemos de pagina ejecutara esta cleanup function que seteara nuestro bool a false,
         //y por lo tanto no se manejar la peticion del api lo cual nos resolvera el memory leak
+        //La cleanup functions se ejecuta antes de que se ejecute el proximo efecto, la cleanup function
+        //No se ejecuta en la primera ejecucion del useEffect, osea cuando el componente se monta
         return () => {
             // cancel the subscription
             isComponentMount = false;
         };
+
     }, []);
 
     return <div>
